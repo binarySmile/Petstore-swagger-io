@@ -1,184 +1,207 @@
 package com.github.binarySmile.petstoreswagger.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import javax.annotation.Generated;
 
 @Generated("com.robohorse.robopojogenerator")
-public class InventoryResponse {
+public class InventoryResponse{
 
-    @JsonProperty("sold")
-    private int sold;
+	@JsonProperty("sold")
+	private int sold;
 
-    @JsonProperty("unavailable")
-    private int unavailable;
+	@JsonProperty("ksks")
+	private int ksks;
 
-    @JsonProperty("Nonavailable")
-    private int nonavailable;
+	@JsonProperty("test")
+	private int test;
 
-    @JsonProperty("pending")
-    private int pending;
+	@JsonProperty("unavailable")
+	private int unavailable;
 
-    @JsonProperty("testing")
-    private int testing;
+	@JsonProperty("Nonavailable")
+	private int nonavailable;
 
-    @JsonProperty("available")
-    private int available;
+	@JsonProperty("pending")
+	private int pending;
 
-    @JsonProperty("asdasda")
-    private int asdasda;
+	@JsonProperty("available")
+	private int available;
 
-    @JsonProperty("Not Found")
-    private int notFound;
+	@JsonProperty("asdasda")
+	private int asdasda;
 
-    @JsonProperty("swimming")
-    private int swimming;
+	@JsonProperty("Not Found")
+	private int notFound;
 
-    @JsonProperty("Active")
-    private int active;
+	@JsonProperty("good")
+	private int good;
 
-    @JsonProperty("decasead")
-    private int decasead;
+	@JsonProperty("swimming")
+	private int swimming;
 
-    @JsonProperty("amet")
-    private int amet;
+	@JsonProperty("invalid_status")
+	private int invalidStatus;
 
-    @JsonProperty("ok")
-    private int ok;
+	@JsonProperty("amet")
+	private int amet;
 
-    @JsonProperty("consectetur")
-    private int consectetur;
+	@JsonProperty("{{petStatus}}")
+	private int petStatus;
 
-    public int getSold() {
-        return sold;
-    }
+	@JsonProperty("consectetur")
+	private int consectetur;
 
-    public void setSold(int sold) {
-        this.sold = sold;
-    }
+	@JsonProperty("Pending")
+	private int pending1;
 
-    public int getUnavailable() {
-        return unavailable;
-    }
+	public void setSold(int sold){
+		this.sold = sold;
+	}
 
-    public void setUnavailable(int unavailable) {
-        this.unavailable = unavailable;
-    }
+	public int getSold(){
+		return sold;
+	}
 
-    public int getNonavailable() {
-        return nonavailable;
-    }
+	public void setKsks(int ksks){
+		this.ksks = ksks;
+	}
 
-    public void setNonavailable(int nonavailable) {
-        this.nonavailable = nonavailable;
-    }
+	public int getKsks(){
+		return ksks;
+	}
 
-    public int getPending() {
-        return pending;
-    }
+	public void setTest(int test){
+		this.test = test;
+	}
 
-    public void setPending(int pending) {
-        this.pending = pending;
-    }
+	public int getTest(){
+		return test;
+	}
 
-    public int getTesting() {
-        return testing;
-    }
+	public void setUnavailable(int unavailable){
+		this.unavailable = unavailable;
+	}
 
-    public void setTesting(int testing) {
-        this.testing = testing;
-    }
+	public int getUnavailable(){
+		return unavailable;
+	}
 
-    public int getAvailable() {
-        return available;
-    }
+	public void setNonavailable(int nonavailable){
+		this.nonavailable = nonavailable;
+	}
 
-    public void setAvailable(int available) {
-        this.available = available;
-    }
+	public int getNonavailable(){
+		return nonavailable;
+	}
 
-    public int getAsdasda() {
-        return asdasda;
-    }
+	public void setPending1(int pending){
+		this.pending = pending;
+	}
 
-    public void setAsdasda(int asdasda) {
-        this.asdasda = asdasda;
-    }
+	public int getPending1(){
+		return pending;
+	}
 
-    public int getNotFound() {
-        return notFound;
-    }
+	public void setAvailable(int available){
+		this.available = available;
+	}
 
-    public void setNotFound(int notFound) {
-        this.notFound = notFound;
-    }
+	public int getAvailable(){
+		return available;
+	}
 
-    public int getSwimming() {
-        return swimming;
-    }
+	public void setAsdasda(int asdasda){
+		this.asdasda = asdasda;
+	}
 
-    public void setSwimming(int swimming) {
-        this.swimming = swimming;
-    }
+	public int getAsdasda(){
+		return asdasda;
+	}
 
-    public int getActive() {
-        return active;
-    }
+	public void setNotFound(int notFound){
+		this.notFound = notFound;
+	}
 
-    public void setActive(int active) {
-        this.active = active;
-    }
+	public int getNotFound(){
+		return notFound;
+	}
 
-    public int getDecasead() {
-        return decasead;
-    }
+	public void setGood(int good){
+		this.good = good;
+	}
 
-    public void setDecasead(int decasead) {
-        this.decasead = decasead;
-    }
+	public int getGood(){
+		return good;
+	}
 
-    public int getAmet() {
-        return amet;
-    }
+	public void setSwimming(int swimming){
+		this.swimming = swimming;
+	}
 
-    public void setAmet(int amet) {
-        this.amet = amet;
-    }
+	public int getSwimming(){
+		return swimming;
+	}
 
-    public int getOk() {
-        return ok;
-    }
+	public void setInvalidStatus(int invalidStatus){
+		this.invalidStatus = invalidStatus;
+	}
 
-    public void setOk(int ok) {
-        this.ok = ok;
-    }
+	public int getInvalidStatus(){
+		return invalidStatus;
+	}
 
-    public int getConsectetur() {
-        return consectetur;
-    }
+	public void setAmet(int amet){
+		this.amet = amet;
+	}
 
-    public void setConsectetur(int consectetur) {
-        this.consectetur = consectetur;
-    }
+	public int getAmet(){
+		return amet;
+	}
 
-    @Override
-    public String toString() {
-        return
-                "InventoryResponse{" +
-                        "sold = '" + sold + '\'' +
-                        ",unavailable = '" + unavailable + '\'' +
-                        ",nonavailable = '" + nonavailable + '\'' +
-                        ",pending = '" + pending + '\'' +
-                        ",testing = '" + testing + '\'' +
-                        ",available = '" + available + '\'' +
-                        ",asdasda = '" + asdasda + '\'' +
-                        ",not Found = '" + notFound + '\'' +
-                        ",swimming = '" + swimming + '\'' +
-                        ",active = '" + active + '\'' +
-                        ",decasead = '" + decasead + '\'' +
-                        ",amet = '" + amet + '\'' +
-                        ",ok = '" + ok + '\'' +
-                        ",consectetur = '" + consectetur + '\'' +
-                        "}";
-    }
+	public void setPetStatus(int petStatus){
+		this.petStatus = petStatus;
+	}
+
+	public int getPetStatus(){
+		return petStatus;
+	}
+
+	public void setConsectetur(int consectetur){
+		this.consectetur = consectetur;
+	}
+
+	public int getConsectetur(){
+		return consectetur;
+	}
+
+	public void setPending(int pending){
+		this.pending = pending;
+	}
+
+	public int getPending(){
+		return pending;
+	}
+
+	@Override
+ 	public String toString(){
+		return 
+			"InventoryResponse{" + 
+			"sold = '" + sold + '\'' + 
+			",ksks = '" + ksks + '\'' + 
+			",test = '" + test + '\'' + 
+			",unavailable = '" + unavailable + '\'' + 
+			",nonavailable = '" + nonavailable + '\'' + 
+			",pending = '" + pending + '\'' + 
+			",available = '" + available + '\'' + 
+			",asdasda = '" + asdasda + '\'' + 
+			",not Found = '" + notFound + '\'' + 
+			",good = '" + good + '\'' + 
+			",swimming = '" + swimming + '\'' + 
+			",invalid_status = '" + invalidStatus + '\'' + 
+			",amet = '" + amet + '\'' + 
+			",{{petStatus}} = '" + petStatus + '\'' + 
+			",consectetur = '" + consectetur + '\'' + 
+			",pending = '" + pending1 + '\'' +
+			"}";
+		}
 }

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PetstoreTest">
+    <test name="TestSuite1">
+        <classes>
+            <class name="com.github.binarySmile.petstoreswagger.TestSuite"/>
+        </classes>
+    </test>
+</suite>

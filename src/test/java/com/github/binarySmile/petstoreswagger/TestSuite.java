@@ -3,16 +3,17 @@ package com.github.binarySmile.petstoreswagger;
 import com.github.binarySmile.petstoreswagger.common.Constants;
 import com.github.binarySmile.petstoreswagger.pojo.InventoryResponse;
 import io.restassured.http.ContentType;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
+
 public class TestSuite extends Constants {
 
-    @Test
+ @Test
     public void createUserTest() {
         Map <String, String> user = new HashMap <String, String>();
         user.put("id", ID_USER);
@@ -34,7 +35,7 @@ public class TestSuite extends Constants {
         System.out.println("Test 1 done");
     }
 
-    @Test
+@Test
     public void inventoryTest() {
         InventoryResponse response = given()
                 .get(BASE_URI + BASE_PATH_INVENTORY)
